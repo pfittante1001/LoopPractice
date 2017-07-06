@@ -93,8 +93,10 @@ namespace LoopPractice
 
 
             //}
-            string contPro = "yes";
-            bool exit = false;
+
+
+            //string contPro = "yes";
+            //bool exit = false;
 
             //do
             //{
@@ -154,23 +156,29 @@ namespace LoopPractice
             //    }
             //} while (exit == true);
 
-            for (int k = 0; k < 1; k++)
-            {
+            //for (int k = 0; k < 1; k++)
+            //{
+            //for (int i = 1; i <= 5; i++)
+            //{
+            //Console.Write(+ i);
 
-            
-            for (int i = 1; i <= 5; i++)
-            {
+            //   for(int j = 2; j <= 5; j++)
+            //    {
+            //          Console.Write("\t" + j * i);
+            //   }
+            // Console.WriteLine();
+            //}
 
-                Console.Write(+ i);
-               
-               for(int j = 2; j <= 5; j++)
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.Write(i);
+
+                for (int j = 1; j < i ; j++)
                 {
-                    Console.Write("\t" + j * i);
+                    Console.Write(j);
                 }
                 Console.WriteLine();
             }
-                
-           }
         }
     }
 }
