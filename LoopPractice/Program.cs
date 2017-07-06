@@ -69,32 +69,108 @@ namespace LoopPractice
             string exitUpper = "no";
             char[] custId = new char[6];
 
-            while (exitUpper != "QUIT")
+            //while (exitUpper != "QUIT")
+            //{
+            //    Console.Write("Would you like to check in for you appointment: ");
+            //    string exit = Console.ReadLine();
+            //    exitUpper = exit.ToUpper();
+
+            //    if (exitUpper != "QUIT")
+            //    {
+            //        Console.Write("Patient Check-in System \n");
+            //        Console.Write("Please enter your first name \n");
+            //        string fullName = Console.ReadLine();
+            //        Console.Write("Please enter your six digit patient ID name \n");
+            //        for (int i = 0; i < custId.Length; i++)
+            //        {
+            //            string charStr = Console.ReadLine();
+            //            custId[i] = char.Parse(charStr);
+            //        }
+
+            //        Console.Write("What if the patients check-in time: \n");
+            //        string apptTime = Console.ReadLine();
+            //    }
+
+
+            //}
+            string contPro = "yes";
+            bool exit = false;
+
+            //do
+            //{
+            //    int numGrades = 0;
+            //    decimal totalGrade = 0.0m;
+
+
+
+            //    Console.Write("Would you like me to calculate you GPA? Type Yes to continue or no to exit: ");
+            //    contPro = Console.ReadLine();
+
+            //    if (contPro != "no")
+            //    {
+            //        exit = true;
+
+            //        Console.WriteLine("How many grades would you like to enter: ");
+            //        string numGradesStr = Console.ReadLine();
+            //        numGrades = int.Parse(numGradesStr);
+
+            //        char[] stuGrades = new char[numGrades];
+
+            //        for (int i = 0; i < numGrades; i++)
+            //        {
+            //            Console.Write("Please enter grade # {0}: ", i + 1);
+            //            string letterGrade = Console.ReadLine();
+            //            stuGrades[i] = char.Parse(letterGrade);
+
+            //            decimal gradeConv = 0.0m;
+            //            switch (stuGrades[i])
+            //            {
+            //                case ('a'):
+            //                    gradeConv = 4.0m;
+            //                    break;
+            //                case ('b'):
+            //                    gradeConv = 3.0m;
+            //                    break;
+            //                case ('c'):
+            //                    gradeConv = 2.0m;
+            //                    break;
+            //                case ('d'):
+            //                    gradeConv = 1.0m;
+            //                    break;
+            //                case ('f'):
+            //                    gradeConv = 0.0m;
+            //                    break;
+            //            }
+
+
+            //            totalGrade = totalGrade + gradeConv;
+
+            //        }
+
+            //        Console.WriteLine(" Your GPA is {0} ", totalGrade / numGrades);
+            //    }else
+            //    {
+            //        exit = false;
+            //    }
+            //} while (exit == true);
+
+            for (int k = 0; k < 1; k++)
             {
-                Console.Write("Would you like to check in for you appointment: ");
-                string exit = Console.ReadLine();
-                exitUpper = exit.ToUpper();
 
-                if (exitUpper != "QUIT")
-                {
-                    Console.Write("Patient Check-in System \n");
-                    Console.Write("Please enter your first name \n");
-                    string fullName = Console.ReadLine();
-                    Console.Write("Please enter your six digit patient ID name \n");
-                    for (int i = 0; i < custId.Length; i++)
-                    {
-                        string charStr = Console.ReadLine();
-                        custId[i] = char.Parse(charStr);
-                    }
-
-                    Console.Write("What if the patients check-in time: \n");
-                    string apptTime = Console.ReadLine();
-                }
-                    
-
-            }
             
+            for (int i = 1; i <= 5; i++)
+            {
 
+                Console.Write(+ i);
+               
+               for(int j = 2; j <= 5; j++)
+                {
+                    Console.Write("\t" + j * i);
+                }
+                Console.WriteLine();
+            }
+                
+           }
         }
     }
 }
