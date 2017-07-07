@@ -156,88 +156,113 @@ namespace LoopPractice
             //    }
             //} while (exit == true);
 
-            for (int k = 0; k < 1; k++)
+            ////Multiplication Table
+
+            //for (int k = 0; k < 1; k++)
+            //{
+            //    for (int i = 1; i <= 5; i++)
+            //    {
+            //        Console.Write(+i);
+
+            //        for (int j = 2; j <= 5; j++)
+            //        {
+            //            Console.Write("\t" + j * i);
+            //        }
+            //        Console.WriteLine();
+            //    }
+            //}
+
+            //Pyramid
+            //for (int i = 0; i <= 10; i++) //rows
+            //{
+            //    Console.Write(i);
+
+            //    for (int j = 1; j < i ; j++) //columns
+            //    {
+            //        Console.Write(j);
+            //    }
+            //    Console.WriteLine(); //creates new line after colums print 
+
+            //}
+
+
+            //Print only movies starting with a vowel
+
+            //bool exit = false;
+            //int ctr = 0;
+            //while (exit == false)
+            //{
+
+            //    string[] favMovies = new string[10];
+            //    Console.Write("Please enter up to ten of your favorite movies. \n");
+
+            //    for (int i = 0; i < favMovies.Length; i++)
+            //    { 
+            //        Console.Write("Enter movie number " + (i + 1 )+ " ? or quit to exit: ");
+            //        string namesMovies = Console.ReadLine();
+
+            //        if(namesMovies == "quit")
+            //        {
+            //            exit = true;
+            //            break;
+            //        }else
+            //        {
+            //            favMovies[i] = namesMovies;
+            //            ctr++;
+            //        }
+
+            //        Console.WriteLine(ctr);
+
+            //    }
+
+            //    for (int i = 0; i <= ctr; i++)
+            //    {
+            //        if (favMovies[i] == (null))
+            //        {
+            //            break;
+            //        }
+            //        if (favMovies[i].StartsWith("e"))
+            //        {
+            //            Console.Write("{0} ", favMovies[i]);
+            //        }
+            //        else if (favMovies[i].StartsWith("i"))
+            //        {
+            //            Console.Write("{0} ", favMovies[i]);
+            //        }
+            //        else if (favMovies[i].StartsWith("o"))
+            //        {
+            //            Console.Write("{0} ", favMovies[i]);
+            //        }
+            //        else if (favMovies[i].StartsWith("u"))
+            //        {
+            //            Console.Write("{0} ", favMovies[i]);
+            //        }
+            //        else if (favMovies[i].StartsWith("a"))
+            //        {
+            //            Console.Write("{0} ", favMovies[i]);
+            //        }                
+            //     }
+            //}
+
+            bool win = false;
+
+            do
             {
-                for (int i = 1; i <= 5; i++)
+                Console.WriteLine("Please enter a number. If that number is divisible by three you win: ");
+                int numGame = int.Parse(Console.ReadLine());
+
+                if ((3 % numGame) == 0)
                 {
-                    Console.Write(+i);
-
-                    for (int j = 2; j <= 5; j++)
-                    {
-                        Console.Write("\t" + j * i);
-                    }
-                    Console.WriteLine();
+                    Console.WriteLine("You win");
+                    win = true;
+                }else
+                {
+                    Console.WriteLine("You lost");
                 }
-            }
+                
 
-                //for (int i = 0; i <= 10; i++) //rows
-                //{
-                //    Console.Write(i);
-
-                //    for (int j = 1; j < i ; j++) //columns
-                //    {
-                //        Console.Write(j);
-                //    }
-                //    Console.WriteLine(); //creates new line after colums print 
-
-                //}
-
-                //bool exit = false;
-                //int ctr = 0;
-                //while (exit == false)
-                //{
-
-                //    string[] favMovies = new string[10];
-                //    Console.Write("Please enter up to ten of your favorite movies. \n");
-
-                //    for (int i = 0; i < favMovies.Length; i++)
-                //    { 
-                //        Console.Write("Enter movie number " + (i + 1 )+ " ? or quit to exit: ");
-                //        string namesMovies = Console.ReadLine();
-
-                //        if(namesMovies == "quit")
-                //        {
-                //            exit = true;
-                //            break;
-                //        }else
-                //        {
-                //            favMovies[i] = namesMovies;
-                //            ctr++;
-                //        }
-
-                //        Console.WriteLine(ctr);
-
-                //    }
-
-                //    for (int i = 0; i <= ctr; i++)
-                //    {
-                //        if (favMovies[i] == (null))
-                //        {
-                //            break;
-                //        }
-                //        if (favMovies[i].StartsWith("e"))
-                //        {
-                //            Console.Write("{0} ", favMovies[i]);
-                //        }
-                //        else if (favMovies[i].StartsWith("i"))
-                //        {
-                //            Console.Write("{0} ", favMovies[i]);
-                //        }
-                //        else if (favMovies[i].StartsWith("o"))
-                //        {
-                //            Console.Write("{0} ", favMovies[i]);
-                //        }
-                //        else if (favMovies[i].StartsWith("u"))
-                //        {
-                //            Console.Write("{0} ", favMovies[i]);
-                //        }
-                //        else if (favMovies[i].StartsWith("a"))
-                //        {
-                //            Console.Write("{0} ", favMovies[i]);
-                //        }                
-                //     }
-                //}
-
+            } while (win == false);
+            
 
                 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             }
