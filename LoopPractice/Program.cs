@@ -244,24 +244,24 @@ namespace LoopPractice
             //     }
             //}
 
-            bool win = false;
+            //bool win = false;
 
-            do
-            {
-                Console.WriteLine("Please enter a number. If that number is divisible by three you win: ");
-                int numGame = int.Parse(Console.ReadLine());
+            //do
+            //{
+            //    Console.WriteLine("Please enter a number. If that number is divisible by three you win: ");
+            //    int numGame = int.Parse(Console.ReadLine());
 
-                if ((3 % numGame) == 0)
-                {
-                    Console.WriteLine("You win");
-                    win = true;
-                }else
-                {
-                    Console.WriteLine("You lost");
-                }
+            //    if ((3 % numGame) == 0)
+            //    {
+            //        Console.WriteLine("You win");
+            //        win = true;
+            //    }else
+            //    {
+            //        Console.WriteLine("You lost");
+            //    }
                 
 
-            } while (win == false);
+            //} while (win == false);
             
 
                 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
